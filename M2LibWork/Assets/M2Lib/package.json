@@ -1,0 +1,11 @@
+{
+  "name": "net.hitsuji-app.m2lib",
+  "displayName": "M2Lib",
+  "version": "0.0.1",
+  "unity": "2019.3",
+  "description": "",
+  "keywords": [],
+  "license": "",
+  "category": "",
+  "dependencies": {}
+}
