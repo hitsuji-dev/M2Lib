@@ -1,0 +1,41 @@
+# ---------------[ Unity generated ]------------------ #
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+UnityGenerated/
+
+# ----[ Visual Studio / MonoDevelop generated ]------- #
+
+ExportedObj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+.vs/
+
+# -------------[ OS generated ]------------------------ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# -------------[ Build ]------------------------ #
+*.html
+*.unity3d
+Assets/Spine/
+Assets/Plugins/
+
+
+
+Assets/StreamingAssets/
+Assets/StreamingAssets.meta
