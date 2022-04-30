@@ -1,7 +1,8 @@
-﻿using System.IO;
+using System.IO;
 using System.Text;
 using UnityEngine;
 using UnityEditor;
+using System.Linq;
 
 namespace M2Lib
 {
@@ -10,6 +11,8 @@ namespace M2Lib
         [MenuItem("M2Lib-Tools/Convert To UTF-8")]
         private static void Run()
         {
+            var noBomUtf8 = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
+
             foreach (var assetPath in AssetDatabase.GetAllAssetPaths())
             {
                 if (!assetPath.StartsWith("Assets"))
@@ -37,15 +40,18 @@ namespace M2Lib
                 // Already UTF-8
                 if (enc.CodePage == 65001)
                 {
-                    // BOMを確認
-                    if ((buffer[0] == 0xEF) && (buffer[1] == 0xBB) && (buffer[2] == 0xBF))
+                    var hasBom = buffer[0] == 0xEF && buffer[1] == 0xBB && buffer[2] == 0xBF;
+                    if (!hasBom)
                     {
                         continue;
                     }
+
+                    // Delete bom.
+                    buffer = buffer.Skip(3).ToArray();
                 }
 
                 var contents = enc.GetString(buffer).Replace("\r\n", "\n");
-                File.WriteAllText(assetPath, contents, Encoding.GetEncoding("utf-8"));
+                File.WriteAllText(assetPath, contents, noBomUtf8);
                 Debug.Log($"Convert To UTF-8. Path:{assetPath}");
             }
             Debug.Log("Convert To UTF-8 Done.");
