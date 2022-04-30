@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-namespace M2Engine
+namespace M2Lib
 {
     public static class VectorUtil
     {
