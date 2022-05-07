@@ -52,8 +52,8 @@ namespace M2Lib
             Debug.LogError($"not found. Type:{type.Name} ID:{id}");
             return null;
         }
-        
-        public static async ValueTask PreloadAsync<T>() where T : MasterBase
+
+        public static async Task PreloadAsync<T>() where T : MasterBase
         {
             var type = typeof(T);
             var url = GetUrl<T>();

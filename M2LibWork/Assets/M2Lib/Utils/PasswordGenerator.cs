@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace M2Lib
+namespace M2Lib.Utils
 {
     public static class PasswordGenerator
     {

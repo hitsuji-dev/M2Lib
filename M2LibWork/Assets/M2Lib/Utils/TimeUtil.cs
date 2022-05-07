@@ -1,6 +1,6 @@
 using System;
 
-namespace M2Lib
+namespace M2Lib.Utils
 {
     public static class TimeUtil
     {
