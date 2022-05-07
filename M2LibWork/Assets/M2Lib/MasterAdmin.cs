@@ -53,7 +53,7 @@ namespace M2Lib
             return null;
         }
 
-        public static async Task PreloadAsync<T>() where T : MasterBase
+        public static async ValueTask PreloadAsync<T>() where T : MasterBase
         {
             var type = typeof(T);
             var url = GetUrl<T>();

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using System.Linq;
 
-namespace M2Lib
+namespace M2Lib.Editor
 {
     public static class Convert2Utf8
     {

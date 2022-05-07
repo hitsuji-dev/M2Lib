@@ -1,7 +1,7 @@
 using System.IO;
 using UnityEditor;
 
-namespace M2Lib
+namespace M2Lib.Editor
 {
     public static class EmptyFolderDeleter
     {

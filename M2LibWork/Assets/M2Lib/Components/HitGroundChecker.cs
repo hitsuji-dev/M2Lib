@@ -2,7 +2,7 @@ using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace M2Lib
+namespace M2Lib.Components
 {
     public class HitGroundChecker : MonoBehaviour
     {

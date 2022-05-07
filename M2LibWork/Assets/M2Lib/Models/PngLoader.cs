@@ -1,7 +1,7 @@
 using System.IO;
 using UnityEngine;
 
-namespace M2Lib
+namespace M2Lib.Models
 {
     /// <summary>
     /// https://qiita.com/r-ngtm/items/6cff25643a1a6ba82a6c
