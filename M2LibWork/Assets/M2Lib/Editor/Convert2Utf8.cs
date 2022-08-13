@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.IO;
 using System.Text;
 using UnityEngine;
@@ -265,3 +266,4 @@ namespace M2Lib.Editor
         }
     }
 }
+#endif
