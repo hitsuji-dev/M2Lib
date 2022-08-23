@@ -1,4 +1,5 @@
 #if UNITY_EDITOR
+
 using System.IO;
 using System.Text;
 using UnityEngine;
@@ -17,6 +18,18 @@ namespace M2Lib.Editor
             foreach (var assetPath in AssetDatabase.GetAllAssetPaths())
             {
                 if (!assetPath.StartsWith("Assets"))
+                {
+                    continue;
+                }
+                if (assetPath.StartsWith("Assets/Plugins/"))
+                {
+                    continue;
+                }
+                if (assetPath.StartsWith("Assets/ExternalAssets/"))
+                {
+                    continue;
+                }
+                if (assetPath.StartsWith("Assets/AssetStore/"))
                 {
                     continue;
                 }
@@ -266,4 +279,5 @@ namespace M2Lib.Editor
         }
     }
 }
+
 #endif
