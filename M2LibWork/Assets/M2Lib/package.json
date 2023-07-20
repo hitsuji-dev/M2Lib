@@ -1,13 +1,13 @@
 {
-    "name": "net.hitsuji-app.m2lib",
-    "displayName": "M2Lib",
-    "version": "0.0.12",
-    "unity": "2021.3",
-    "description": "",
-    "keywords": [],
-    "license": "",
-    "category": "",
-    "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "3.0.2"
-    }
+  "name": "net.hitsuji-app.m2lib",
+  "displayName": "M2Lib",
+  "version": "0.0.13",
+  "unity": "2021.3",
+  "description": "",
+  "keywords": [],
+  "license": "",
+  "category": "",
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+  }
 }
